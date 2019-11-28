@@ -14,7 +14,7 @@ def CrearAutor(request):
             # Guardar datos de form
             form_autor.save()
             # Redireccionar a url
-            return redirect('index')
+            return redirect('index_libro')
     else:
         form_autor = FormAutor()
     return render(request, 'libro/crear_autor.html', {'form_autor': form_autor})
