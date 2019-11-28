@@ -3,9 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>Home</title>
+  <title>{% block title %}Home{% endblock title %}</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="">
+  <!-- Extra Styles -->
+  {% block extrastyles %}
+    
+  {% endblock extrastyles %}
 </head>
 <body>
-  <h1>Index de Home</h1>
+  {% block body %}
+    <h1>Index de Home</h1>
+  {% endblock body %}
+  
+  <!-- Scripts -->
+  <script src=""></script>
+  <!-- Extra Scripts -->
+  {% block extrajs %}
+    
+  {% endblock extrajs %}
 </body>
 </html>
